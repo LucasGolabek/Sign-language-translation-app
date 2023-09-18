@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #6067FF;
+  --secondary-color: #444444;
+  --background-color: #F2F2F2;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.8em;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 5em 2em 0 2em;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  width: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul.primary-nav, nav ul.secondary-nav {
+  margin-top: 5em;
+  margin: 0;
+  padding: .5em;
+}
+
+nav ul.primary-nav a, nav ul.secondary-nav a {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  padding: .1em 2em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+nav ul.primary-nav a:hover, nav li.log-in a:hover {
+  color: var(--primary-color);
+}
+
+nav li.register a {
+  color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  font-weight: bold;
+  border-radius: 5em;
+  margin-top: -.2em;
+}
+
+nav li.register a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--secondary-color);
+  letter-spacing: .3em;
+}
+
+.hero .h1-title {
+  color: black;
+  font-size: 5em;
+  margin-top: .2em;
+}
+
+.hero img {
+  width: 55%;
+}
+
+.hero .result-info {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero .result-value {
+  display: inline-block;
+  font-size: 10em;
+  font-weight: bolder;
+  margin: 0 0 0 0;
+  padding-left: .4em;
+  padding-right: .4em;
+  border: 0.1em solid var(--primary-color);
+  border-radius: 5em;
+}
+
+.container form {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container form .functionality-info {
+  color: black;
+  font-size: 5em;
+  margin-top: .1em;
+}
+
+.container form p {
+  display: none;
+}
+
+.container form .label-for-file {
+  padding: .1em 1.2em .1em 1.2em;
+  color: var(--primary-color);
+  display: inline-block;
+  font-size: 3em;
+  font-weight: bold;
+  border: 7px solid var(--primary-color);
+  border-radius: 5em;
+  margin-top: -1.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container form .label-for-file:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border: 7px solid var(--background-color);
+}
+
+.container form button {
+  display: inline-block;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5em;
+  padding: .1em 1em .1em 1em;
+  margin-top: .8em;
+  cursor: pointer;
+}
+
+.container form button:hover {
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 1.7em;
+  margin-top: 1.02em;
+  margin-bottom: .15em;
+}
+
+.info-container h1 {
+  display: inline-block;
+  font-size: 5em;
+  font-weight: bolder;
+  margin: 0 0 0 0;
+}
+
+.info-container a {
+  display: inline-block;
+  margin: 0 0 0 0;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.info-container a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.info-container p {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bolder;
+  color: var(--secondary-color);
+}
+/*# sourceMappingURL=main.css.map */

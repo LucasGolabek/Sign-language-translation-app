@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL alphabet</title>
+    <link rel="icon" href="{% static 'pages/icon.png' %}">
+    <link rel="stylesheet" href="{% static 'pages/main.css' %}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="/">ASL<span>alphabet</span></a>
+            <nav>
+                <ul class="primary-nav">
+                    <li class="photo"><a href="/photo/">Photo</a></li>
+                    <li class="video"><a href="/video/">Video</a></li>
+                    <li class="info"><a href="/info/">Info</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="log-in"><a href="#">Log in</a></li>
+                    <li class="register"><a href="#">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        {% block content %}
+        {% endblock %}
+    </section>
+</body>

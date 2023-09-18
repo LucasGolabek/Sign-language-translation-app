@@ -1,0 +1,21 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <form method="post" enctype="multipart/form-data">
+            <h1 class="functionality-info">Get letter from photo</h1>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <label class="label-for-file" for="file">Select file</label><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    {% if file_sent %}
+        <div class="container">
+            <p class="result-info">Your letter</p>
+            <h1 class="result-value">{{ result }}</h1>
+        </div>
+    {% endif %}
+{% endblock %}
